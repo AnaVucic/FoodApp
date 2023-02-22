@@ -1,0 +1,35 @@
+header {
+    background: whitesmoke;
+    padding: 0;
+    border-bottom: 1px solid ;
+}
+
+a{
+    color: crimson;
+}
+
+a:hover{
+    font-weight: 600;
+    text-shadow: 30px;
+}
+
+.container{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+a.logo{
+    padding: 1.5em;
+    font-weight: 900;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li a {
+    padding: 1.5em;
+    display: inline-block;
+}
