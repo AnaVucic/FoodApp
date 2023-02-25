@@ -1,6 +1,6 @@
 # FoodApp
 
-This project is made following [this]https://www.youtube.com/watch?v=UIWK5_DrZ7w&list=PLpaspowtqj-dlt-C7FvRG42LNRFcXdRDD tutorial.
+This project is made following [this](https://www.youtube.com/watch?v=UIWK5_DrZ7w&list=PLpaspowtqj-dlt-C7FvRG42LNRFcXdRDD) tutorial.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6.
 
