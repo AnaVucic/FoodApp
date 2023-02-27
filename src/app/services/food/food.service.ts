@@ -87,22 +87,27 @@ export class FoodService {
       this.getAll().filter(food => food.tags?.includes(tag))
   }
 
-  getAllTags():Tag[]{
+  getAllFoodsBySearchTerm(term: string): Food[] {
+    return this.getAll().filter(food =>
+      food.name.toLowerCase().includes(term.toLowerCase()));
+  }
+
+  getAllTags(): Tag[] {
     return [
-      { name: "All", count: 6},
-      { name: "Healthy", count: 2},
-      { name: "Breakfast", count: 1},
-      { name: "Fruit", count: 1},
-      { name: "Sweet", count: 1},
-      { name: "Vegan", count: 2},
-      { name: "Dip", count: 1},
-      { name: "Side Dish", count: 1},
-      { name: "Dinner", count: 1},
-      { name: "Meat", count: 2},
-      { name: "Lunch", count: 1},
-      { name: "Slow Food", count: 1},
-      { name: "Soup", count: 1},
-      { name: "Vegetables", count: 1}
+      { name: "All", count: 6 },
+      { name: "Healthy", count: 2 },
+      { name: "Breakfast", count: 1 },
+      { name: "Fruit", count: 1 },
+      { name: "Sweet", count: 1 },
+      { name: "Vegan", count: 2 },
+      { name: "Dip", count: 1 },
+      { name: "Side Dish", count: 1 },
+      { name: "Dinner", count: 1 },
+      { name: "Meat", count: 2 },
+      { name: "Lunch", count: 1 },
+      { name: "Slow Food", count: 1 },
+      { name: "Soup", count: 1 },
+      { name: "Vegetables", count: 1 }
     ]
   }
 
